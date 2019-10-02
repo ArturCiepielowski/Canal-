@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site title</title>
+    <meta name="description" content="Description" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  
+  <body>
+    <nav class="navigation">
+        <img src="assets/img/canalPlus.png" alt="logo" class="navigation__logo">
+        <ul class="navigation__list navigation__list--js">
+            <li class="navigation__iteam"> <a class="navigation__X1" href="index.html">Salon</a></li>
+            <li class="navigation__iteam"> <a class="navigation__X2" href="#oferta">Oferta</a></li>
+            <li class="navigation__iteam"> <a class="navigation__X3" href="#dojazd">Dojazd</a></li>
+            <li class="navigation__iteam"> <a class="navigation__X3" href="#kontakt">Kontakt</a></li>
+        </ul>
+        <!--<button class="navigation__switcher navigation__switcher--js" aria-label="Open the menu">≡</button>-->
+    </nav>
+    <section class="mainBody">
+        <section class="salon" id="salon">
+            <div class="salon__Container">
+              <div class="salon__photoContainer"><img src="assets/img/salonCanal.jpg" ref="picture of the nc+" class="salon__img"></div>
+              <p class="salon__header">Salon Canal+ w Szczecinie</p>
+              <p class="salon__content">Zapraszamy Państwa do nowootwartego Salonu Canal + w Centrum Galaxy.</p>
+            </div>
+        
+        </section>
+
+       
+
+        <section class="oferta" id="oferta">
+            <div class="oferta__description">
+              <div class="oferta__photoContainer"></div>
+              <p class="oferta__header">Oferta</p>
+              <p class="oferta__content">Oferta CANAL+ to 8 kanałów premium, nieprzerywanych reklamami. Ponad 1000 premier filmów i seriali rocznie oraz ponad 2500 godzin transmisji sportowych na żywo. Największe hity filmowe i serialowe po raz pierwszy w telewizji. Nagradzane kino prosto z Hollywood i najnowsze polskie hity. Różnorodność gatunków. Najwięksi reżyserzy i aktorzy. Autorskie programy, relacje na żywo z największych wydarzeń w świecie filmu (Gala Oscarowa®, Gala Cezarów, MFF w Cannes).</p>
+            </div>
+            <div class="oferta__offerContainer"></div>
+          
+          </section>
+          
+          
+
+          <section class="dojazd" id="dojazd">
+              <div class="dojazd__Container">
+                  <p class="dojazd__header">Dojazd</p>
+                  <p class="dojazd__content">tramwaje: 1, 2, 3, 5, 10 , 11, 12, 13</p>
+                  <p class="dojazd__content">linie autobusowe dzienne zwykłe: 58, 59, 68, 101, 107</p>
+                  <p class="dojazd__content">linie autobusowe dzienne pospieszne: A, B, C, C BIS, D, F, G</p>
+                  <p class="dojazd__content">linie autobusowe nocne: 522, 523, 524, 525, 529, 530, 532</p>
+                </div>
+              <div class="dojazd__mapContainer"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9507.64972190477!2d14.554717!3d53.434274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83b9f9697c7bb2b0!2sSALON%20CANAL%2BGALAXY!5e0!3m2!1spl!2spl!4v1570044548142!5m2!1spl!2spl" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+              
+          
+          </section>
+
+         
+
+          <section class="kontakt" id="kontakt">
+              <div class="kontakt__Container">
+                <p class="kontakt__header">Kontakt</p>
+             </div>
+             <div class="kontakt__flex">
+
+              <div class="flex__iteam flex__iteam1">
+                <img  src="assets/img/hauseIcon.png" alt="contact icon">
+                <p class="kontakt__descriptionHeader">Adres</p>
+                <p class="kontakt__description">aleja Wyzwolenia 18/20</p>
+                <p class="kontakt__description">70-532 Szczecin</p>
+              </div>
+
+              <div class="flex__iteam flex__iteam2">
+                  <img  src="assets/img/phoneIcon.png" alt="phone icon">
+                  <p class="kontakt__descriptionHeader">Telefon</p>
+                  <p class="kontakt__description">579400712</p>
+              </div>
+
+              <div class="flex__iteam flex__iteam3">
+                  <img  src="assets/img/mailIcon.png" alt="mail icon">
+                  <p class="kontakt__descriptionHeader">Mail</p>
+                  <p class="kontakt__description">costam@nc.pl</p>
+              </div>
+
+              <div class="flex__iteam flex__iteam4">
+                  <img  src="assets/img/cloclIcon.png" alt="clock icon">
+                  <p class="kontakt__descriptionHeader">Godziny</p>
+                  <p class="kontakt__description">poniedziałek-piątek</p>
+                  <p class="kontakt__description">9:00-21:00</p>
+              </div>
+              
+            </div>
+              
+          </section>
+
+  </section>
+    <footer class="footer">
+      <p class="footer__text">Śledź nas na :</p>
+      <a class="footer__fbIconContainer" href="https://www.facebook.com/Canal-Szczecin-Galaxy-103485014389759/"><img src="assets/img/fbIcon.png" ref="fb icon" width="45" height="45"> </a>
+      
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
