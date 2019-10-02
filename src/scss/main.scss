@@ -1,0 +1,203 @@
+@import "_normalize";
+@import "_variables";
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+a:link {
+  color: white;
+  font-family:'Poppins', sans-serif;
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #888888;
+}
+
+body {
+  background-color: white;
+
+}
+
+.dojazd{
+  
+ 
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+
+  &__header{
+
+    font-size: 32px;
+
+  }
+
+  &__map{
+
+    margin-top:16px;
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+}
+
+.footer{
+
+  background-color: black;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__text{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    margin-right: 32px;
+    margin-left:32px;
+    font-size: 24px;
+  }
+}
+
+.kontakt{
+  
+  
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  margin-bottom: 48px;
+  
+  &__description1{
+
+    color:red;
+  }
+
+  &__descriptionHeader{
+
+    font-size: 32px;
+    font-style: bold;
+  }
+
+  &__header{
+
+    font-size: 32px;
+
+  }
+
+  &__flex{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+  }
+
+}
+.mainBody{
+
+  max-width: 100%;
+  width: 1012px;
+  margin:auto;
+}
+
+.navigation{
+
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height:60px;
+  box-sizing: border-box;
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  
+
+  &__iteam{
+    
+    display: inline;
+    padding: 0px;
+    padding-left: 16px;
+    padding-right:16px;
+    color: white; 
+    font-size: 24px;
+  }
+
+  &__list{
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 48px;
+    
+  }
+
+  &__logo{
+    margin-left: 32px;
+    margin-right: 64px;
+    height: 56px;
+  }
+
+  
+}
+
+.oferta{
+
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+
+  &__header{
+    font-size: 32px;
+  }
+
+  &__offerContainer{
+
+    display: block;
+    max-width: 100%;
+    width: 850px;
+    margin: auto;
+    margin-top:64px;
+  }
+   
+  
+}
+
+.salon{
+
+  margin-top: 140px;
+  
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+
+  &__header{
+
+    font-size: 32px;
+
+  }
+
+  &__img{
+
+    float: right;
+    margin: 0px 16px 16px 32px;
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  
+}
+
+
