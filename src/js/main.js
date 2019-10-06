@@ -17,9 +17,6 @@ if ('serviceWorker' in navigator) {
 
 
 
-
-
-
 const navigationSwitcher = document.querySelector('.navigation__switcher--js');
 
 navigationSwitcher.addEventListener('click', (e) => {
