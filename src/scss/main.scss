@@ -34,6 +34,8 @@ body {
 
 }
 
+
+
 .dojazd{
   
  
@@ -46,13 +48,19 @@ body {
 
   }
 
-  &__map{
+  &__mapContainer{
 
-    margin-top:16px;
-    display: block;
-    max-width: 1000px;
-    width: 100%;
+    margin-top: 32px;
   }
+
+ 
+
+  &__boldContent{
+
+    font-weight: bold;
+  }
+
+
 
 }
 
@@ -72,6 +80,13 @@ body {
     margin-left:32px;
     font-size: 24px;
   }
+}
+
+iframe {
+  height: 450px;
+  width: 1000px;
+  resize: both;
+  overflow: auto;
 }
 
 .kontakt{
@@ -151,8 +166,27 @@ body {
     height: 56px;
   }
 
+  &__iteamColumn{
+    display: inline;
+    padding: 0px;
+    padding-left: 16px;
+    padding-right:16px;
+    padding-top: 5px;
+    color: white; 
+    font-size: 24px;
+
+  }
   
 }
+
+.navigationColumn{
+
+  position: fixed;
+  display: none;
+
+}
+
+
 
 .oferta{
 
@@ -201,3 +235,84 @@ body {
 }
 
 
+
+@media (min-width: 901px) {
+  
+  .navigation__switcher{
+
+      display: none;
+  }
+
+  
+
+}
+
+@media (max-width: 900px) {
+
+  iframe {
+    height: 300px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+  }
+
+  .kontakt{
+    
+    &__flex{
+      
+      flex-direction:column;
+      justify-content:space-evenly;
+    }
+
+  }
+
+  .navigation{
+
+
+    &__logo{
+      margin-left: 24px;
+      margin-right: 64px;
+      margin-top: 14px;
+      height: 32px;
+    }
+
+    &__switcher{
+
+      
+      position: absolute;
+      right:16px;
+      top:16px;
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__listColumn{
+
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+     
+    }
+
+  
+  }
+  
+  .navigationColumn--visible{
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    height:180px;
+    box-sizing: border-box;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+
+}

@@ -10,7 +10,7 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+    <meta property="og:image" content="" />
 
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,21 +31,32 @@
   
   <body>
     <nav class="navigation">
-        <img src="assets/img/canalPlus.png" alt="logo" class="navigation__logo">
+        <div class="navigation__logoContainer"><img src="assets/img/canalPlus.png" alt="logo" class="navigation__logo"></div>
         <ul class="navigation__list navigation__list--js">
-            <li class="navigation__iteam"> <a class="navigation__X1" href="index.html">Salon</a></li>
+            <li class="navigation__iteam"> <a class="navigation__X1" href="#salon">Salon</a></li>
             <li class="navigation__iteam"> <a class="navigation__X2" href="#oferta">Oferta</a></li>
             <li class="navigation__iteam"> <a class="navigation__X3" href="#dojazd">Dojazd</a></li>
             <li class="navigation__iteam"> <a class="navigation__X3" href="#kontakt">Kontakt</a></li>
         </ul>
-        <!--<button class="navigation__switcher navigation__switcher--js" aria-label="Open the menu">≡</button>-->
+        <button class="navigation__switcher navigation__switcher--js" aria-label="Open the menu">≡</button>
     </nav>
+    <div class="navigationColumn navigationColumn--js">
+      <ul class="navigation__listColumn navigation__listColumn--js">
+        <li class="navigation__iteamColumn"> <a class="navigation__Y1" href="#salon">Salon</a></li>
+        <li class="navigation__iteamColumn"> <a class="navigation__Y2" href="#oferta">Oferta</a></li>
+        <li class="navigation__iteamColumn"> <a class="navigation__Y3" href="#dojazd">Dojazd</a></li>
+        <li class="navigation__iteamColumn"> <a class="navigation__Y3" href="#kontakt">Kontakt</a></li>
+     </ul>
+</div>
+
+
+
     <section class="mainBody">
         <section class="salon" id="salon">
             <div class="salon__Container">
               <div class="salon__photoContainer"><img src="assets/img/salonCanal.jpg" ref="picture of the nc+" class="salon__img"></div>
-              <p class="salon__header">Salon Canal+ w Szczecinie</p>
-              <p class="salon__content">Zapraszamy Państwa do nowootwartego Salonu Canal + w Centrum Galaxy.</p>
+              <p class="salon__header">Salon Canal+ w Galaxy</p>
+              <p class="salon__content">Zapraszamy Państwa do nowootwartego Salonu Canal + w Galeri Galaxy.</p>
             </div>
         
         </section>
@@ -54,12 +65,9 @@
 
         <section class="oferta" id="oferta">
             <div class="oferta__description">
-              <div class="oferta__photoContainer"></div>
               <p class="oferta__header">Oferta</p>
               <p class="oferta__content">Oferta CANAL+ to 8 kanałów premium, nieprzerywanych reklamami. Ponad 1000 premier filmów i seriali rocznie oraz ponad 2500 godzin transmisji sportowych na żywo. Największe hity filmowe i serialowe po raz pierwszy w telewizji. Nagradzane kino prosto z Hollywood i najnowsze polskie hity. Różnorodność gatunków. Najwięksi reżyserzy i aktorzy. Autorskie programy, relacje na żywo z największych wydarzeń w świecie filmu (Gala Oscarowa®, Gala Cezarów, MFF w Cannes).</p>
             </div>
-            <div class="oferta__offerContainer"></div>
-          
           </section>
           
           
@@ -67,10 +75,10 @@
           <section class="dojazd" id="dojazd">
               <div class="dojazd__Container">
                   <p class="dojazd__header">Dojazd</p>
-                  <p class="dojazd__content">tramwaje: 1, 2, 3, 5, 10 , 11, 12, 13</p>
-                  <p class="dojazd__content">linie autobusowe dzienne zwykłe: 58, 59, 68, 101, 107</p>
-                  <p class="dojazd__content">linie autobusowe dzienne pospieszne: A, B, C, C BIS, D, F, G</p>
-                  <p class="dojazd__content">linie autobusowe nocne: 522, 523, 524, 525, 529, 530, 532</p>
+                  <p class="dojazd__content"><span class="dojazd__boldContent">tramwaje:</span> 1, 2, 3, 5, 10 , 11, 12, 13</p>
+                  <p class="dojazd__content"><span class="dojazd__boldContent">linie autobusowe dzienne zwykłe:</span> 58, 59, 68, 101, 107</p>
+                  <p class="dojazd__content"><span class="dojazd__boldContent">linie autobusowe dzienne pospieszne:</span> A, B, C, C BIS, D, F, G</p>
+                  <p class="dojazd__content"><span class="dojazd__boldContent">linie autobusowe nocne:</span> 522, 523, 524, 525, 529, 530, 532</p>
                 </div>
               <div class="dojazd__mapContainer"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9507.64972190477!2d14.554717!3d53.434274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83b9f9697c7bb2b0!2sSALON%20CANAL%2BGALAXY!5e0!3m2!1spl!2spl!4v1570044548142!5m2!1spl!2spl" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
               
@@ -101,7 +109,7 @@
               <div class="flex__iteam flex__iteam3">
                   <img  src="assets/img/mailIcon.png" alt="mail icon">
                   <p class="kontakt__descriptionHeader">Mail</p>
-                  <p class="kontakt__description">costam@nc.pl</p>
+                  <p class="kontakt__description">canalplus.galaxyszczecin@gmail.com</p>
               </div>
 
               <div class="flex__iteam flex__iteam4">

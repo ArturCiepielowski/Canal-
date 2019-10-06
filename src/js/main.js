@@ -14,9 +14,15 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// place your code below
 
 
-console.log(`Hello world!`);
 
 
+
+
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+
+navigationSwitcher.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigationColumn--js');
+    navigationList.classList.toggle('navigationColumn--visible');
+});
