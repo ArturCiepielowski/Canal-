@@ -338,11 +338,10 @@ body {
   font-style: italic; }
   .dojazd__header {
     font-size: 32px; }
-  .dojazd__map {
-    margin-top: 16px;
-    display: block;
-    max-width: 1000px;
-    width: 100%; }
+  .dojazd__mapContainer {
+    margin-top: 32px; }
+  .dojazd__boldContent {
+    font-weight: bold; }
 
 .footer {
   background-color: black;
@@ -364,6 +363,12 @@ body {
     margin-right: 32px;
     margin-left: 32px;
     font-size: 24px; }
+
+iframe {
+  height: 450px;
+  width: 1000px;
+  resize: both;
+  overflow: auto; }
 
 .kontakt {
   font-family: 'Poppins', sans-serif;
@@ -430,6 +435,18 @@ body {
     margin-left: 32px;
     margin-right: 64px;
     height: 56px; }
+  .navigation__iteamColumn {
+    display: inline;
+    padding: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    color: white;
+    font-size: 24px; }
+
+.navigationColumn {
+  position: fixed;
+  display: none; }
 
 .oferta {
   font-family: 'Poppins', sans-serif;
@@ -455,5 +472,66 @@ body {
     display: block;
     max-width: 400px;
     width: 100%; }
+
+@media (min-width: 901px) {
+  .navigation__switcher {
+    display: none; } }
+
+@media (max-width: 900px) {
+  iframe {
+    height: 300px;
+    width: 300px;
+    resize: both;
+    overflow: auto; }
+  .kontakt__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .navigation__logo {
+    margin-left: 24px;
+    margin-right: 64px;
+    margin-top: 14px;
+    height: 32px; }
+  .navigation__switcher {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-color: black;
+    color: white;
+    border: 2px solid white; }
+  .navigation__list {
+    display: none; }
+  .navigation__listColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0px; }
+  .navigationColumn--visible {
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    height: 180px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
