@@ -186,6 +186,10 @@ iframe {
 
 }
 
+.mainBody{
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 
 .oferta{
@@ -231,6 +235,11 @@ iframe {
     width: 100%;
   }
 
+  &__photoContainer{
+
+    padding-left: 16px;
+  }
+
   
 }
 
@@ -248,6 +257,8 @@ iframe {
 }
 
 @media (max-width: 900px) {
+
+ 
 
   iframe {
     height: 300px;
@@ -316,3 +327,20 @@ iframe {
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .mainBody{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .salon{
+
+    margin-top:80px;
+  }
+}
+
