@@ -318,13 +318,13 @@ html {
 a:link {
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+  font-style: normal;
   text-decoration: none; }
 
 a:visited {
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+  font-style: normal;
   text-decoration: none; }
 
 a:hover {
@@ -335,7 +335,7 @@ body {
 
 .dojazd {
   font-family: 'Poppins', sans-serif;
-  font-style: italic; }
+  font-style: normal; }
   .dojazd__header {
     font-size: 32px; }
   .dojazd__mapContainer {
@@ -359,10 +359,13 @@ body {
   .footer__text {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-style: italic;
+    font-style: normal;
     margin-right: 32px;
     margin-left: 32px;
     font-size: 24px; }
+  .footer__instaIconContainer {
+    margin-top: 3px;
+    margin-left: 16px; }
 
 iframe {
   height: 450px;
@@ -372,7 +375,7 @@ iframe {
 
 .kontakt {
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 48px; }
   .kontakt__description1 {
     color: red; }
@@ -448,13 +451,9 @@ iframe {
   position: fixed;
   display: none; }
 
-.mainBody {
-  padding-left: 16px;
-  padding-right: 16px; }
-
 .oferta {
   font-family: 'Poppins', sans-serif;
-  font-style: italic; }
+  font-style: normal; }
   .oferta__header {
     font-size: 32px; }
   .oferta__offerContainer {
@@ -467,7 +466,7 @@ iframe {
 .salon {
   margin-top: 140px;
   font-family: 'Poppins', sans-serif;
-  font-style: italic; }
+  font-style: normal; }
   .salon__header {
     font-size: 32px; }
   .salon__img {
@@ -489,6 +488,8 @@ iframe {
     width: 300px;
     resize: both;
     overflow: auto; }
+  .flex__iteam {
+    margin-top: 32px; }
   .kontakt__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -497,6 +498,9 @@ iframe {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
+  .kontakt__descriptionHeader {
+    margin-top: 16px;
+    margin-bottom: 16px; }
   .navigation__logo {
     margin-left: 24px;
     margin-right: 64px;
@@ -538,7 +542,10 @@ iframe {
             flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .mainBody {
+    padding-left: 16px;
+    padding-right: 16px; } }
 
 @media (max-width: 600px) {
   .mainBody {
