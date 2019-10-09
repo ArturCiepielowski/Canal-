@@ -14,14 +14,14 @@ html {
 a:link {
   color: white;
   font-family:'Poppins', sans-serif;
-  font-style: italic;
+  font-style: normal;
   text-decoration: none;
 }
 
 a:visited {
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+    font-style: normal;
   text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ body {
   
  
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+    font-style: normal;
 
   &__header{
 
@@ -75,10 +75,16 @@ body {
   &__text{
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-style: italic;
+      font-style: normal;
     margin-right: 32px;
     margin-left:32px;
     font-size: 24px;
+  }
+
+  &__instaIconContainer{
+
+    margin-top:3px;
+    margin-left: 16px;
   }
 }
 
@@ -93,7 +99,7 @@ iframe {
   
   
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+    font-style: normal;
   margin-bottom: 48px;
   
   &__description1{
@@ -186,16 +192,13 @@ iframe {
 
 }
 
-.mainBody{
-  padding-left: 16px;
-  padding-right: 16px;
-}
+
 
 
 .oferta{
 
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+    font-style: normal;
 
   &__header{
     font-size: 32px;
@@ -218,7 +221,7 @@ iframe {
   margin-top: 140px;
   
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+    font-style: normal;
 
   &__header{
 
@@ -267,12 +270,23 @@ iframe {
     overflow: auto;
   }
 
+  .flex__iteam{
+
+    margin-top:32px;
+  }
+
   .kontakt{
     
     &__flex{
       
       flex-direction:column;
       justify-content:space-evenly;
+    }
+
+    &__descriptionHeader{
+
+      margin-top:16px;
+      margin-bottom: 16px;
     }
 
   }
@@ -324,6 +338,11 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content:center;
+  }
+
+  .mainBody{
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
 }
